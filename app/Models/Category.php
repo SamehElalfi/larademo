@@ -1,16 +1,16 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Category extends Model
 {
     protected $guarded = [];
     protected $hidden = ['created_at', 'updated_at'];
 
-    public function category()
+    public function products()
     {
-        $this->belongsTo("App\Category");
+        $this->hasMany("App\Product");
     }
 }
