@@ -47,13 +47,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route("categories.manage") }}" class="nav-link">
+                            <a href="{{ route("dashboard.categories.index") }}" class="nav-link">
                                 <i class="fas fa-tasks nav-icon"></i>
                                 <p>Manage Categories</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('categories.create') }}" class="nav-link">
+                            <a href="{{ route("dashboard.categories.create") }}" class="nav-link">
                                 <i class="fas fa-plus-circle nav-icon"></i>
                                 <p>Create Category</p>
                             </a>
@@ -73,13 +73,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route("products.manage") }}" class="nav-link">
+                            <a href="{{ route("dashboard.products.index") }}" class="nav-link">
                                 <i class="fas fa-tasks nav-icon"></i>
                                 <p>Manage Products</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('products.create') }}" class="nav-link">
+                            <a href="{{ route("dashboard.products.create") }}" class="nav-link">
                                 <i class="fas fa-plus-circle nav-icon"></i>
                                 <p>Create Product</p>
                             </a>

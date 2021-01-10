@@ -33,8 +33,8 @@
             </td>
             <td>{{ Str::limit($product->description, 100, '...') }}</td>
             <td>
-                <a href="{{ route("products.edit", $product->id) }}" class="btn btn-success">Edit</a>
-                <a data-link="{{ route("products.destroy", $product->id) }}" onclick="deleteProduct(this)"
+                <a href="{{ route("dashboard.products.edit", $product->id) }}" class="btn btn-success">Edit</a>
+                <a data-link="{{ route("dashboard.products.destroy", $product->id) }}" onclick="deleteProduct(this)"
                     class="btn btn-danger">Delete</a>
             </td>
         </tr>
@@ -44,7 +44,7 @@
 </table>
 @endsection
 
-@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route("products.store") ])
+@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route("dashboard.products.store") ])
 
 @endsection
 

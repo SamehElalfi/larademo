@@ -16,6 +16,6 @@
 <button type="submit" class="btn btn-success">Create</button>
 @endsection
 
-@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route('categories.store')])
+@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route('dashboard.categories.store')])
 
 @endsection

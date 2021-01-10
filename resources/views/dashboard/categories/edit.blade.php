@@ -16,7 +16,8 @@
 <button type="submit" class="btn btn-success">Save</button>
 @endsection
 
-@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route('categories.update', $category->id),
+@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route('dashboard.categories.update',
+$category->id),
 "formMethod"=>"PUT"])
 
 @endsection

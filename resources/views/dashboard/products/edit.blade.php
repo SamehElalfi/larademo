@@ -48,7 +48,10 @@
 <button type="submit" class="btn btn-success">Save</button>
 @endsection
 
-@include('layout.card', ['cardTitle' => 'Create Product', "formAction"=>route('products.update', $product->id),
-"formMethod"=>"PATCH"])
+@include('layout.card', [
+"cardTitle" => 'Create Product',
+"formAction"=>route('dashboard.products.update',$product->id),
+"formMethod"=>"PATCH"
+])
 
 @endsection

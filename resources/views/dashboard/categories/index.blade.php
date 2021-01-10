@@ -27,8 +27,8 @@
             <td>{{ $category->name }}</td>
             <td>{{ $category->description }}</td>
             <td>
-                <a href="{{ route("categories.edit", $category->id) }}" class="btn btn-success">Edit</a>
-                <a class="btn btn-danger" data-link="{{ route("categories.destroy", $category->id) }}"
+                <a href="{{ route("dashboard.categories.edit", $category->id) }}" class="btn btn-success">Edit</a>
+                <a class="btn btn-danger" data-link="{{ route("dashboard.categories.destroy", $category->id) }}"
                     onclick="deleteCategory(this)">Delete</a>
             </td>
         </tr>
